@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95430390692189258}
   - component: {fileID: 58454423662579734}
   - component: {fileID: 50277714982475008}
+  - component: {fileID: 114980543677103268}
   m_Layer: 11
   m_Name: Flappy Bird Blue
   m_TagString: Player
@@ -95,6 +96,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114980543677103268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087092073635316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3522c5b0d5393c4fbb5e05f0f67e148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 50277714982475008}
+  anim: {fileID: 95430390692189258}
 --- !u!212 &212601562725747326
 SpriteRenderer:
   m_ObjectHideFlags: 1

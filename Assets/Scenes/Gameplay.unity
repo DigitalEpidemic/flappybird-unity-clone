@@ -1456,18 +1456,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1444845145}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1538850937}
-        m_MethodName: FlapTheBird
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1444845145
@@ -1701,12 +1690,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1538850937 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114980543677103268, guid: a63d15b32bdd2a64aa704a677d6ba692,
-    type: 2}
-  m_PrefabInternal: {fileID: 952559116}
-  m_Script: {fileID: 11500000, guid: f3522c5b0d5393c4fbb5e05f0f67e148, type: 3}
 --- !u!1 &1547974600
 GameObject:
   m_ObjectHideFlags: 0

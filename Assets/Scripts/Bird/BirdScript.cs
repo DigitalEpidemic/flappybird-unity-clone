@@ -89,6 +89,7 @@ public class BirdScript : MonoBehaviour {
 				isAlive = false;
 				anim.SetTrigger ("Died");
 				audioSource.PlayOneShot (diedClip);
+				GameplayController.instance.PlayerDiedShowScore (score);
 			}
 		}
 	}
@@ -96,6 +97,7 @@ public class BirdScript : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D target) {
 		if (target.tag == "PipeHolder") {
 			score++;
+			GameplayController.instance.SetScore (score);
 			audioSource.PlayOneShot (pointClip);
 		}
 	}

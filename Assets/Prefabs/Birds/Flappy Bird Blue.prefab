@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087092073635316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8392873, y: -0.36035, z: 0}
+  m_LocalPosition: {x: -1.5, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -195,6 +195,7 @@ MonoBehaviour:
   flapClip: {fileID: 8300000, guid: c4b761d4d38ce8f4b80a430abaee7362, type: 3}
   pointClip: {fileID: 8300000, guid: 156dc8a1e36a5764d9871353f20e75eb, type: 3}
   diedClip: {fileID: 8300000, guid: 6353cdb04248c5645a8ec01d154716f6, type: 3}
+  score: 0
 --- !u!212 &212601562725747326
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95430390692189258}
   - component: {fileID: 58454423662579734}
   - component: {fileID: 50277714982475008}
+  - component: {fileID: 82993288433748266}
   - component: {fileID: 114980543677103268}
   m_Layer: 11
   m_Name: Flappy Bird Blue
@@ -79,6 +80,86 @@ CircleCollider2D:
   m_Offset: {x: -0.03, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!82 &82993288433748266
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087092073635316}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95430390692189258
 Animator:
   serializedVersion: 3
@@ -109,6 +190,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidBody: {fileID: 50277714982475008}
   anim: {fileID: 95430390692189258}
+  isAlive: 0
+  audioSource: {fileID: 82993288433748266}
+  flapClip: {fileID: 8300000, guid: c4b761d4d38ce8f4b80a430abaee7362, type: 3}
+  pointClip: {fileID: 8300000, guid: 156dc8a1e36a5764d9871353f20e75eb, type: 3}
+  diedClip: {fileID: 8300000, guid: 6353cdb04248c5645a8ec01d154716f6, type: 3}
 --- !u!212 &212601562725747326
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -14,7 +14,7 @@ public class BirdScript : MonoBehaviour {
 	private Animator anim;
 
 	private float forwardSpeed = 3f;
-	private float bounceSpeed = 4f;
+	private float bounceSpeed = 5.5f;
 
 	private	bool didFlap;
 	public bool isAlive;

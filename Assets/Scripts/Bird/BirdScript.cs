@@ -91,8 +91,12 @@ public class BirdScript : MonoBehaviour {
 				audioSource.PlayOneShot (diedClip);
 				GameplayController.instance.PlayerDiedShowScore (score);
 			}
+
 			if (target.gameObject.tag == "Ground") {
-				AdsController.instance.ShowRewardAd ();
+				int random = Random.Range (0, 10);
+				if (random > 4) {
+					AdsController.instance.ShowRewardAd ();
+				}
 			}
 		}
 	}

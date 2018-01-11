@@ -23,7 +23,7 @@ public class AdsController : MonoBehaviour {
 	void LevelFinishedLoading (Scene scene, LoadSceneMode mode) {
 		if (scene.name == "MainMenu") {
 			int random = Random.Range (0, 10);
-			if (random > 5) {
+			if (random > 7) {
 				ShowAd ();
 			}
 		}
